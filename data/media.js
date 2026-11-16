@@ -419,6 +419,386 @@ window.MEDIA={
     "ch": "David Liao大蔚阿昌"
    }
   ]
+ },
+ "kapok": {
+  "img": {
+   "author": "Jubayer 2005",
+   "lic": "CC BY 4.0",
+   "licurl": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bombax_ceiba_flower_in_Bangladesh.jpg%E0%A5%A4.jpg"
+  },
+  "yt": [
+   {
+    "id": "pVzY0FF7DGE",
+    "title": "台南白河夢幻「木棉花道」 曾獲選全球最美花街",
+    "ch": "台視新聞 TTV NEWS"
+   },
+   {
+    "id": "rCEDXM1f-rU",
+    "title": "季節限定!! 2023 台南將軍木棉花道大量盛開【苓子寮木棉花道】 | 2023.4.2現場實景 | 4K空拍",
+    "ch": "Fly with Randy"
+   }
+  ]
+ },
+ "daylily": {
+  "img": {
+   "author": "JackyM59",
+   "lic": "CC BY-SA 4.0",
+   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:H%C3%A9m%C3%A9rocalle_fauve_(Hemerocallis_fulva)_en_juin.jpg"
+  },
+  "yt": [
+   {
+    "id": "uzBdQBOn6Mg",
+    "title": "花蓮六十石山金針花季 「此生必看花季之一」｜三立新聞網SETN.com",
+    "ch": "三立新聞網SETN"
+   },
+   {
+    "id": "xnODXnuOqV0",
+    "title": "花蓮赤科山｜走進金針花海，山林中的金色花毯【2026秋.Taiwan旅遊趣】",
+    "ch": "Lissa 世界旅遊趣"
+   }
+  ]
+ },
+ "calla": {
+  "img": {
+   "author": "Eric Hunt",
+   "lic": "CC BY-SA 2.5",
+   "licurl": "https://creativecommons.org/licenses/by-sa/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Zantedeschia_aethiopica_-1.jpg"
+  },
+  "yt": [
+   {
+    "id": "3eMe9iZsbqI",
+    "title": "陽明山海芋盛開 仙氣山谷美如畫 |【民生八方事】| 2026031308 #八大民生新聞",
+    "ch": "八大民生新聞"
+   },
+   {
+    "id": "OTlAfJXTu04",
+    "title": "「#竹子湖 海芋季」陽明山 海芋 花況5成以上滿開 櫻花也不少 | 台北景點 | 台北一日遊 | Calla Lily Farm in Tawan YangMingShan",
+    "ch": "After Work Go Go下班走一走"
+   }
+  ]
+ },
+ "tulip": {
+  "img": {
+   "author": "Dina L",
+   "lic": "CC0",
+   "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG"
+  },
+  "yt": [
+   {
+    "id": "E7nZWVAJBQc",
+    "title": "最新》士林官邸鬱金香展登場 11萬株彩色花海超夢幻@newsebc",
+    "ch": "東森新聞 CH51"
+   },
+   {
+    "id": "BTc7eq0geHs",
+    "title": "不用飛出國！杉林溪也有鬱金香花海-台灣生活新聞",
+    "ch": "台灣生活新聞 Taiwan Daily Network"
+   }
+  ]
+ },
+ "carnation": {
+  "img": {
+   "author": "草花写真館",
+   "lic": "CC BY-SA 3.0",
+   "licurl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:W_carnation4051.jpg"
+  },
+  "yt": [
+   {
+    "id": "Kg1YMB0JOGI",
+    "title": "母親節康乃馨需求大增 花農展笑顏 | 華視新聞 20200506",
+    "ch": "華視新聞 CH52"
+   },
+   {
+    "id": "PkuauDkCjVk",
+    "title": "迎接五月母親節! 國產康乃馨價格漲-大台中新聞",
+    "ch": "台灣生活新聞 Taiwan Daily Network"
+   }
+  ]
+ },
+ "hibiscus": {
+  "img": {
+   "author": "Andy / Andrew Fogg from near Cambridge, UK",
+   "lic": "CC BY 2.0",
+   "licurl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hibiscus_Brilliant.jpg"
+  },
+  "yt": [
+   {
+    "id": "bqHYAwOFWgQ",
+    "title": "松山區VS.朱槿花！很像紅玫瑰的朱槿成為了市區最常見的「圍籬花朵」！據說葉子還直接被當作「菠菜替代品」吃下？Hibiscus rosa-sinensis【植物百科】【我家門前野花多EP1】",
+    "ch": "臺灣人的陽光空氣水"
+   },
+   {
+    "id": "2sSZ8nRScWs",
+    "title": "一日限定!「朱槿花展」台北登場 八大民生新聞 2020100404",
+    "ch": "八大民生新聞"
+   }
+  ]
+ },
+ "camellia": {
+  "img": {
+   "author": "Fir0002（推定）",
+   "lic": "CC BY-SA 3.0",
+   "licurl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Camellia_japonica_%27Pink_Perfection%27.jpg"
+  },
+  "yt": [
+   {
+    "id": "_-03ooK6CG0",
+    "title": "到「陽明山花卉試驗中心」一親茶花美人芳澤",
+    "ch": "雄獅旅遊LionTravel"
+   },
+   {
+    "id": "h5lTIXDV61M",
+    "title": "大台中新聞 神岡秘密花徑 台灣本土茶花盛開",
+    "ch": "台灣生活新聞 Taiwan Daily Network"
+   }
+  ]
+ },
+ "plumeria": {
+  "img": {
+   "author": "Basile Morin",
+   "lic": "CC BY-SA 4.0",
+   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Plumeria_(Frangipani)_flowers.jpg"
+  },
+  "yt": [
+   {
+    "id": "Y2cSLeZZQEM",
+    "title": "台灣常見植物介紹(12)#緬梔 #雞蛋花",
+    "ch": "macroshot - 小砲打螞蟻"
+   },
+   {
+    "id": "wLDIUkXI1eE",
+    "title": "大台中新聞大肚百年雞蛋花開",
+    "ch": "台灣生活新聞 Taiwan Daily Network"
+   }
+  ]
+ },
+ "narcissus": {
+  "img": {
+   "author": "Zachi Evenor",
+   "lic": "CC BY 2.0",
+   "licurl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Narcissus-tazetta-0006a.jpg"
+  },
+  "yt": [
+   {
+    "id": "A4AsimnpkVM",
+    "title": "20150212 鹽水百年手藝 水仙花雕迎春傳承",
+    "ch": "佛光山人間衛視"
+   },
+   {
+    "id": "HqDAqb0zaEs",
+    "title": "祀典武廟水仙花雕刻展 找回年節傳統氣氛 今日大話新聞",
+    "ch": "今日大話NeWS"
+   }
+  ]
+ },
+ "murraya": {
+  "img": {
+   "author": "Michael Wolf",
+   "lic": "CC BY-SA 3.0",
+   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Murraya_paniculata_05.jpg"
+  },
+  "yt": [
+   {
+    "id": "NXLsfqB3L5I",
+    "title": "(80)月橘(七里香) 台灣常見植物：它的花香真能飄過山嗎？ #MockOrange #flowers #shorts",
+    "ch": "macroshot - 小砲打螞蟻"
+   },
+   {
+    "id": "j7mgflW_CVo",
+    "title": "四百棵七里香花開如白雪一片",
+    "ch": "台視新聞 TTV NEWS"
+   }
+  ]
+ },
+ "peach": {
+  "img": {
+   "author": "Petro Stelte",
+   "lic": "CC BY-SA 4.0",
+   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Prunus-persica-(flowers)-Sitia-Crete-Greece.jpg"
+  },
+  "yt": [
+   {
+    "id": "LEfVujMtXZ0",
+    "title": "武陵農場桃花盛開 5.8公頃彷彿「十里桃花林」－民視新聞",
+    "ch": "民視新聞網 Formosa TV News network"
+   },
+   {
+    "id": "jlrft3uVQZ8",
+    "title": "拉拉山水蜜桃花季",
+    "ch": "艾真Emily"
+   }
+  ]
+ },
+ "chinaberry": {
+  "img": {
+   "author": "Alpsdake",
+   "lic": "CC BY-SA 3.0",
+   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Melia_azedarach_flower.JPG"
+  },
+  "yt": [
+   {
+    "id": "J64R06Ms30A",
+    "title": "苦楝樹悄開花！ 台中、雲林夢幻美景吸客",
+    "ch": "台視新聞 TTV NEWS"
+   },
+   {
+    "id": "ClvpqCmnAVQ",
+    "title": "2021苦楝花.春天開花，紫白色的小花具淡淡的清香! China tree",
+    "ch": "Ahcm1456"
+   }
+  ]
+ },
+ "gingerlily": {
+  "img": {
+   "author": "NasserHalaweh",
+   "lic": "CC BY-SA 4.0",
+   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Zingiberaceae_Hedychium_coronarium_1.2.jpg"
+  },
+  "yt": [
+   {
+    "id": "5A5hrDz0FfM",
+    "title": "遵循母親手藝新竹內灣野薑花粽飄香",
+    "ch": "台視新聞 TTV NEWS"
+   },
+   {
+    "id": "NQ-zS9VGZRg",
+    "title": "全台最大產地 屏東縣鹽埔野薑花 |【民生八方事】| 2022102906 @gtvnews27",
+    "ch": "八大民生新聞"
+   }
+  ]
+ },
+ "waterlily": {
+  "img": {
+   "author": "Fernando Losada Rodríguez",
+   "lic": "CC BY-SA 4.0",
+   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nymphaea_alba.001_-_Breendonk.jpg"
+  },
+  "yt": [
+   {
+    "id": "ILnibLJ_RAk",
+    "title": "【植科大大】別再叫錯！蓮花、荷花、睡蓮到底怎麼分？教你一眼辨識！ [20190909]",
+    "ch": "植科大大of 板橋李準基"
+   },
+   {
+    "id": "kxi151740QE",
+    "title": "山佳荷花池～睡蓮盛開_小提醒這裡的睡蓮清晨花苞開起下午閉合就看不到盛開112/5/8（阿力的拍照記錄）￼",
+    "ch": "yehhsinte阿力的拍照紀錄"
+   }
+  ]
+ },
+ "flamevine": {
+  "img": {
+   "author": "B.navez",
+   "lic": "CC BY-SA 3.0",
+   "licurl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Pyrostegia_venusta3.JPG"
+  },
+  "yt": [
+   {
+    "id": "XVj-3qARvk8",
+    "title": "苗栗炮仗花盛開「炸裂」 宛如橘紅色瀑布",
+    "ch": "台視新聞 TTV NEWS"
+   },
+   {
+    "id": "v7Bhl5AQho4",
+    "title": "花開迎新春! 鶯歌永吉公園炮仗花季起跑｜華視新聞 20220120",
+    "ch": "華視新聞 CH52"
+   }
+  ]
+ },
+ "roselle": {
+  "img": {
+   "author": "Invertzoo",
+   "lic": "CC BY-SA 4.0",
+   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Roselle,_Hibiscus_sabdariffa,_2014_01.JPG"
+  },
+  "yt": [
+   {
+    "id": "vukHY_H--Uc",
+    "title": "洛神花產季 金峰紅色花海滿花田－民視新聞",
+    "ch": "民視新聞網 Formosa TV News network"
+   },
+   {
+    "id": "ztcfyvZw4xM",
+    "title": "20201102 南迴紅寶石！台東金峰\"洛神花\"紅透盛開",
+    "ch": "佛光山人間衛視"
+   }
+  ]
+ },
+ "poinsettia": {
+  "img": {
+   "author": "André Karwath aka Aka",
+   "lic": "CC BY-SA 2.5",
+   "licurl": "https://creativecommons.org/licenses/by-sa/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Weihnachtsstern_-_gro%C3%9F.jpg"
+  },
+  "yt": [
+   {
+    "id": "qNy5pOOsySo",
+    "title": "花朵隱藏紅苞葉中 揭密聖誕紅轉色關鍵【發現科學】",
+    "ch": "台視新聞 TTV NEWS"
+   },
+   {
+    "id": "ZrFqxXiIRKU",
+    "title": "聖誕紅達人興大園藝系陳彥銘老師談「聖誕紅的挑選與照顧」",
+    "ch": "國立中興大學 NCHU News Channel"
+   }
+  ]
+ },
+ "trumpettree": {
+  "img": {
+   "author": "Jan Smith from Brisbane, Australia",
+   "lic": "CC BY 2.0",
+   "licurl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tabebuia_chrysantha_Flowers.jpg"
+  },
+  "yt": [
+   {
+    "id": "QHS9fCY6sSY",
+    "title": "世新新聞  全台最美堤防！八掌溪畔黃金風鈴木盛開 璀燦耀眼",
+    "ch": "旺TV數位有線電視"
+   },
+   {
+    "id": "zqoKbrj9XtM",
+    "title": "季節限定黃金隧道｜朴子溪畔｜黃花風鈴木｜嘉義縣六腳鄉",
+    "ch": "慢遊嘉義CHIAYI TRAVEL"
+   }
+  ]
+ },
+ "wisteria": {
+  "img": {
+   "author": "3268zauber",
+   "lic": "CC BY-SA 3.0",
+   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Chinesischer_Blauregen_Detail_Bl%C3%BCtentraube.JPG"
+  },
+  "yt": [
+   {
+    "id": "LYqa_Ff4xCo",
+    "title": "【全台最大紫藤花盛地超壯觀！ 淡水秘境想日系不用去日本】｜@framelesstw",
+    "ch": "台灣達人秀"
+   },
+   {
+    "id": "TUuhXOY51o4",
+    "title": "20年樹齡紫藤花盛開 福壽山農場好夢幻",
+    "ch": "台視新聞 TTV NEWS"
+   }
+  ]
  }
 };
 window.DECO={
