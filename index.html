@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>猜猜我是什麼花 台灣四季花朋友</title>
+<meta name="description" content="21 種台灣常見花的看圖猜花活動：一步一步給提示、揭曉後看花語、花期、賞花地點與小知識，附影片與長輩聊天題。適合長輩與小朋友團體帶領。">
+<meta property="og:title" content="猜猜我是什麼花｜台灣四季花朋友">
+<meta property="og:description" content="一步一步給提示的猜花活動，附賞花地點、花語、影片與聊天題。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#edf4f8;
+  --paper:#f8fbfd;
+  --card:#ffffff;
+  --ink:#2b2838;
+  --muted:#686579;
+  --pink:#f084aa;
+  --pink-2:#f6a8c3;
+  --rose:#c4416f;
+  --blush:#fde9f0;
+  --plum:#6c3f86;
+  --leaf:#4d7a5c;
+  --line:#dbe5ec;
+  --shadow:0 26px 50px -18px rgba(54,74,104,.30),0 6px 16px -6px rgba(54,74,104,.14);
+  --cut:drop-shadow(0 16px 14px rgba(52,70,100,.26)) drop-shadow(0 3px 3px rgba(52,70,100,.18));
+  --r:6px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;-webkit-font-smoothing:antialiased}
+body{min-height:100dvh;overflow-x:hidden;font-size:19px;line-height:1.7}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(1200px 700px at 85% -10%,#fff 0,transparent 60%),radial-gradient(900px 600px at -10% 110%,#f7eef5 0,transparent 60%)}
+button,a{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--rose)}
+.latin{font-family:"Jost",sans-serif}
+.app{position:relative;z-index:1}
+.view{display:none}
+.view.on{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.view.on{animation:none}}
+
+/* ---------- 按鈕 ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;border:0;background:var(--rose);color:#fff;font-weight:700;font-size:21px;padding:15px 28px;border-radius:999px;box-shadow:0 10px 22px -10px rgba(196,65,111,.7);transition:transform .15s,box-shadow .15s,background .15s;text-decoration:none;letter-spacing:.04em}
+.btn:hover{transform:translateY(-2px);background:#b23462}
+.btn svg{width:22px;height:22px}
+.btn.ghost{background:#fff;color:var(--rose);box-shadow:inset 0 0 0 2px var(--pink-2)}
+.btn.ghost:hover{background:var(--blush)}
+.btn.small{font-size:17px;padding:10px 18px}
+.chip{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:8px 16px;font-size:17px;text-decoration:none;color:var(--ink);font-weight:500}
+.chip:hover{border-color:var(--pink);color:var(--rose)}
+.chip svg{width:16px;height:16px}
+.chip.on{background:var(--rose);border-color:var(--rose);color:#fff}
+.seg{display:inline-flex;background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:4px;gap:2px;flex-wrap:wrap}
+.seg button{border:0;background:transparent;border-radius:999px;padding:8px 16px;font-size:17px;color:var(--muted);font-weight:500}
+.seg button.on{background:var(--blush);color:var(--rose);font-weight:700}
+
+/* ---------- 首頁 海報 ---------- */
+#home.on{display:grid}
+#home{min-height:100dvh;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);align-items:center;gap:clamp(24px,5vw,72px);padding:clamp(20px,4vw,56px) clamp(16px,5vw,80px)}
+.poster{position:relative;width:min(100%,560px);aspect-ratio:5/7;justify-self:center;container-type:inline-size;background:linear-gradient(180deg,#f3f8fb,#eaf2f7);box-shadow:0 40px 80px -40px rgba(54,74,104,.45);isolation:isolate}
+.poster .frame{position:absolute;left:17%;right:17%;top:11%;bottom:19%;border:max(2px,.75cqw) solid var(--pink);z-index:2}
+.poster .letters{position:absolute;left:20%;right:20%;top:9%;bottom:16%;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(4,1fr);z-index:3;font-family:"Jost",sans-serif;font-weight:700;color:var(--pink);font-size:22cqw;line-height:1;text-shadow:0 2cqw 3cqw rgba(196,65,111,.16)}
+.poster .letters span{display:flex;align-items:center;justify-content:center}
+.poster .letters .dash{font-weight:600}
+.poster .fl{position:absolute;filter:var(--cut);pointer-events:none;user-select:none}
+.poster .fl.back{z-index:1}.poster .fl.mid{z-index:2}.poster .fl.front{z-index:4}
+@media (prefers-reduced-motion:no-preference){
+  .poster .fl{animation:sway 7s ease-in-out infinite alternate;transform-origin:50% 100%}
+  .poster .fl:nth-of-type(2n){animation-duration:9s;animation-direction:alternate-reverse}
+}
+@keyframes sway{from{transform:rotate(var(--r0,0deg))}to{transform:rotate(calc(var(--r0,0deg) + 2deg))}}
+.poster .tagline{position:absolute;left:17%;right:17%;bottom:7%;display:flex;justify-content:space-between;font-family:"Jost",sans-serif;font-weight:600;letter-spacing:.32em;font-size:2.4cqw;color:#8c8aa0;z-index:2}
+
+.intro{max-width:620px}
+.eyebrow{font-family:"Jost",sans-serif;letter-spacing:.38em;font-weight:600;color:var(--rose);font-size:15px;margin:0 0 14px}
+h1.ttl{margin:0;font-family:"Noto Serif TC",serif;font-weight:700;line-height:1.18;font-size:clamp(40px,5.4vw,72px);letter-spacing:.02em}
+h1.ttl .p{color:var(--rose)}
+h1.ttl small{display:block;font-family:"Noto Sans TC",sans-serif;font-weight:500;font-size:.42em;color:var(--muted);letter-spacing:.16em;margin-top:12px}
+.lede{font-size:20px;color:#47445a;margin:22px 0 26px}
+.home-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.opts{display:flex;flex-direction:column;gap:12px;font-size:17px;color:var(--muted)}
+.opts>span{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.opts b{min-width:3em;color:var(--ink);font-weight:700}
+.home-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.sign{font-size:15px;color:var(--muted);margin-top:26px;letter-spacing:.06em}
+.sign b{color:var(--ink)}
+#footSign{text-align:center;padding:26px 16px 40px}
+
+/* ---------- 頁首列 ---------- */
+.bar{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:10px;padding:12px clamp(12px,3vw,32px);background:rgba(237,244,248,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.brand{border:0;background:none;display:flex;align-items:baseline;gap:10px;font-weight:900;font-size:20px;padding:4px 2px}
+.brand .lo{font-family:"Jost",sans-serif;font-weight:700;color:var(--pink);font-size:24px;letter-spacing:.02em}
+.brand small{font-weight:500;color:var(--muted);font-size:15px}
+.bar .sp{flex:1}
+.pill{background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:700;font-size:16px;white-space:nowrap}
+.icon-btn{white-space:nowrap;display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;font-size:16px;font-weight:500}
+.icon-btn:hover{border-color:var(--pink);color:var(--rose)}
+.icon-btn svg{width:18px;height:18px}
+.icon-btn:disabled{opacity:.4;cursor:default}
+
+/* ---------- 猜花 ---------- */
+.stage{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(20px,3.4vw,48px);padding:clamp(20px,3vw,40px) clamp(14px,3.4vw,48px) 30px;max-width:1440px;margin:0 auto;align-items:start}
+.pframe{position:relative;padding:18px}
+.stage>.pframe{position:sticky;top:84px}
+.pframe::before{content:"";position:absolute;inset:0 32px 40px 0;border:2px solid var(--pink);z-index:2;pointer-events:none}
+.photo{position:relative;overflow:hidden;background:#dfe9ef;aspect-ratio:4/3.3;box-shadow:var(--shadow);margin-left:20px;margin-top:20px}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:filter .6s,transform .7s}
+.qnum{position:absolute;right:0;bottom:0;z-index:3;font-family:"Jost",sans-serif;font-weight:700;font-size:72px;line-height:.8;color:var(--pink);text-shadow:0 6px 16px rgba(196,65,111,.2)}
+.qnum small{font-size:.38em;color:var(--muted);font-weight:600}
+.panel{background:var(--card);box-shadow:var(--shadow);padding:clamp(20px,2.6vw,34px);position:relative}
+.qhead{margin:0 0 4px;font-family:"Noto Serif TC",serif;font-size:clamp(28px,3vw,40px);line-height:1.25}
+.qhead .p{color:var(--rose)}
+.qsub{margin:0 0 18px;color:var(--muted);font-size:17px}
+.hint-btns{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:10px}
+.hbtn{white-space:nowrap}
+.hbtn{display:flex;align-items:center;gap:10px;border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:12px 12px;font-size:18px;font-weight:700;text-align:left;transition:.15s}
+.hbtn:hover{border-color:var(--pink);background:var(--blush)}
+.hbtn .n{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--blush);color:var(--rose);font-family:"Jost";font-weight:700;font-size:16px}
+.hbtn.used{opacity:.45;background:#f6f8fa}
+.hints{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:10px}
+.hints li{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border-left:4px solid var(--pink);padding:12px 16px;font-size:clamp(20px,1.7vw,24px);line-height:1.6;animation:pop .35s ease}
+@keyframes pop{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.hints .tag{flex:none;font-size:14px;font-weight:700;color:#fff;background:var(--rose);border-radius:999px;padding:3px 10px;margin-top:5px;white-space:nowrap}
+.choices{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.choices button{border:2px solid var(--line);background:#fff;border-radius:14px;padding:10px 20px;font-size:22px;font-weight:700}
+.choices button:hover{border-color:var(--pink)}
+.choices button.right{background:#e8f4ec;border-color:var(--leaf);color:var(--leaf)}
+.choices button.wrong{background:#f5f5f7;color:#aaa;text-decoration:line-through}
+.empty-tip{margin:16px 0 0;color:var(--muted);font-size:16px;line-height:1.8}
+.kbd{display:inline-block;border:1px solid var(--line);border-bottom-width:3px;border-radius:6px;padding:0 7px;font-size:14px;background:#fff;font-family:"Jost"}
+.reveal-row{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+
+/* ---------- 答案 ---------- */
+.ans{max-width:1240px;margin:0 auto;padding:clamp(20px,3vw,40px) clamp(14px,3.4vw,40px) 20px;display:flex;flex-direction:column;gap:22px}
+.ans-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(20px,3vw,44px);align-items:center}
+.ans-name .a{display:block;color:var(--muted);font-size:18px}
+.ans-name .b{display:block;font-family:"Noto Serif TC",serif;font-size:clamp(56px,7vw,96px);font-weight:700;color:var(--rose);line-height:1.12;margin:4px 0 6px;letter-spacing:.04em}
+.ans-name .c{display:block;font-family:"Jost",sans-serif;font-size:clamp(20px,2vw,26px);font-weight:600;color:var(--ink)}
+.ans-name .d{display:block;font-style:italic;font-family:Georgia,serif;color:var(--muted);font-size:19px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.badge{font-size:16px;font-weight:700;padding:5px 14px;border-radius:999px;background:var(--blush);color:var(--rose)}
+.badge.s{background:#e9f1f6;color:#3b5b78}
+.card{background:var(--card);box-shadow:var(--shadow);padding:clamp(18px,2.2vw,28px)}
+.card h3{margin:0 0 10px;font-size:22px;display:flex;align-items:center;gap:10px}
+.card h3 .dot{width:12px;height:12px;border:2px solid var(--pink);transform:rotate(45deg);flex:none}
+.card p{margin:0;font-size:19px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.facts{margin:0;padding-left:1.2em;font-size:19px;display:flex;flex-direction:column;gap:8px}
+.facts li::marker{color:var(--pink)}
+.talk{display:flex;flex-direction:column;gap:10px}
+.talk div{background:var(--blush);padding:10px 16px;font-size:20px;font-weight:500;border-radius:4px 18px 18px 18px}
+.talk .kidq{background:#e9f1f6;color:#2f4f6b}
+.safe{display:flex;gap:12px;align-items:flex-start;background:#fff6e8;border-left:4px solid #e3a34a;padding:12px 16px;margin-top:12px;font-size:18px}
+.safe b{color:#a8691c;white-space:nowrap}
+.linkrow{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 14px}
+.vids{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.vid{display:block;text-decoration:none;color:inherit}
+.vid .th{position:relative;aspect-ratio:16/9;background:#e2e8ee;overflow:hidden;cursor:pointer}
+.vid .th img{width:100%;height:100%;object-fit:cover;display:block}
+.vid .th iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid .pl{position:absolute;left:50%;top:50%;width:66px;height:66px;margin:-33px;border-radius:50%;background:rgba(196,65,111,.92);color:#fff;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.vid .pl svg{width:30px;height:30px;margin-left:4px}
+.vid .cap{padding:10px 2px 0;font-size:16px;line-height:1.5}
+.vid .cap b{display:block;font-size:17px}
+.vid .cap span{color:var(--muted)}
+.credit,.card p.credit{font-size:14px;color:var(--muted);margin:10px 0 0;line-height:1.7}
+.ans-nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* ---------- 圖鑑 ---------- */
+.wrap{max-width:1240px;margin:0 auto;padding:clamp(20px,3vw,40px) clamp(14px,3.4vw,40px) 20px}
+.page-title{font-family:"Noto Serif TC",serif;font-size:clamp(32px,3.6vw,48px);margin:0 0 6px}
+.page-title .p{color:var(--rose)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 22px}
+.ggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:20px}
+.gitem{border:0;padding:0;background:#fff;box-shadow:var(--shadow);text-align:left;transition:transform .15s}
+.gitem:hover{transform:translateY(-4px)}
+.gitem img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.gitem div{padding:10px 14px 14px}
+.gitem b{display:block;font-size:22px}
+.gitem span{display:block;font-size:14px;color:var(--muted);font-style:italic;font-family:Georgia,serif}
+.gitem em{font-style:normal;font-size:13px;font-weight:700;color:var(--rose)}
+.gitem.done b::after{content:" ✓";color:var(--leaf);font-size:16px}
+
+/* ---------- 說明 ---------- */
+.steps{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:8px;font-size:18px}
+table.cr{border-collapse:collapse;width:100%;font-size:15px}
+table.cr th,table.cr td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+table.cr th{color:var(--muted);font-weight:700;white-space:nowrap}
+
+/* ---------- RWD ---------- */
+@media (max-width:980px){
+  #home{grid-template-columns:1fr;padding-top:24px}
+  .poster{width:min(100%,460px)}
+  .intro{justify-self:center}
+  .stage,.ans-hero{grid-template-columns:1fr}
+  .stage>.pframe{position:relative;top:0}
+  .grid3{grid-template-columns:1fr 1fr}
+}
+@media (max-width:680px){
+  body{font-size:18px}
+  .grid2,.grid3,.vids{grid-template-columns:1fr}
+  .hint-btns{grid-template-columns:1fr 1fr}
+  .hbtn{white-space:normal;font-size:17px}
+  .hide-s{display:none}
+  .brand .bt{display:none}
+  .bar{gap:6px}
+  .icon-btn{padding:7px 10px}
+  .pframe{padding:10px}.pframe::before{inset:0 18px 26px 0}
+  .photo{margin-left:12px;margin-top:12px}
+  .qnum{font-size:52px}
+  .btn{font-size:19px;padding:13px 22px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- 首頁 -->
+<section class="view on" id="home">
+  <div class="poster" id="poster" aria-label="FLOWER 花卉海報">
+    <div class="frame"></div>
+    <div class="letters" aria-hidden="true"><span>F</span><span>L</span><span>O</span><span class="dash">–</span><span class="dash">–</span><span>W</span><span>E</span><span>R.</span></div>
+    <img class="fl back"  src="assets/deco/lotusi.png"  alt="" style="width:44cqw;left:48cqw;top:0cqw;--r0:6deg">
+    <img class="fl back"  src="assets/deco/rosag.png"   alt="" style="width:28cqw;left:0cqw;top:20cqw;--r0:-10deg">
+    <img class="fl mid"   src="assets/deco/peony.png"   alt="" style="width:38cqw;left:30cqw;top:36cqw;--r0:-3deg">
+    <img class="fl front" src="assets/deco/camellia.png" alt="" style="width:26cqw;left:70cqw;top:62cqw;--r0:-14deg">
+    <img class="fl front" src="assets/deco/fav2.png"    alt="" style="width:34cqw;left:-3cqw;top:88cqw;--r0:6deg">
+    <div class="tagline"><span></span><span>台灣・四季</span><span>FLOWERS</span></div>
+  </div>
+  <div class="intro">
+    <p class="eyebrow">GUESS THE FLOWER</p>
+    <h1 class="ttl">猜猜我是<span class="p">什麼花</span><small>台灣四季花朋友・21 種</small></h1>
+    <p class="lede">從過年的梅花、春天的油桐花，到夏天的鳳凰花、秋天的桂花。先看照片，按鈕一個一個打開提示，大家猜到了再揭曉，一起聊聊和這朵花有關的回憶。</p>
+    <div class="home-actions">
+      <button class="btn" data-go="start"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>開始猜花</button>
+      <button class="btn ghost" data-go="gallery">花朋友圖鑑</button>
+    </div>
+    <div class="opts">
+      <span><b>玩法</b><span class="seg" id="segMode"><button data-v="see" class="on">看照片猜</button><button data-v="blur">模糊照片</button><button data-v="zoom">局部特寫</button></span></span>
+      <span><b>季節</b><span class="seg" id="segSeason"><button data-v="all" class="on">全部</button><button data-v="spring">春</button><button data-v="summer">夏</button><button data-v="autumn">秋</button><button data-v="winter">冬</button></span></span>
+      <span><b>順序</b><span class="seg" id="segOrder"><button data-v="seq" class="on">依花期</button><button data-v="rand">隨機</button></span></span>
+    </div>
+    <div class="home-links">
+      <button class="btn ghost small" data-go="guide">帶領說明・圖片來源</button>
+    </div>
+    <div class="sign">設計者｜愛迪樂　<b>鍾孟修 職能治療師</b></div>
+  </div>
+</section>
+
+<!-- 猜花 -->
+<section class="view" id="quiz">
+  <div class="bar">
+    <button class="brand" data-go="home" aria-label="回首頁"><span class="lo">FLOWER.</span><span class="bt">猜猜我是什麼花</span></button>
+    <span class="sp"></span>
+    <span class="pill" id="qProg">1 / 21</span>
+    <button class="icon-btn" id="qPrev" aria-label="上一朵"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg><span class="hide-s">上一朵</span></button>
+    <button class="icon-btn" id="qNext" aria-label="下一朵"><span class="hide-s">下一朵</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button>
+    <button class="icon-btn" data-go="gallery">圖鑑</button>
+  </div>
+  <div class="stage">
+    <div class="pframe">
+      <div class="photo"><img id="qImg" alt="猜猜這是什麼花"></div>
+      <div class="qnum" id="qNum">1<small>/21</small></div>
+    </div>
+    <div class="panel">
+      <h2 class="qhead">猜猜看，我是<span class="p">什麼花？</span></h2>
+      <p class="qsub">按下按鈕，一次打開一個提示。猜到了就揭曉！</p>
+      <div class="hint-btns" id="hintBtns"></div>
+      <ul class="hints" id="hintList"></ul>
+      <p class="empty-tip" id="emptyTip">小技巧：先讓大家自由說說看「它是什麼顏色、在哪裡看過」，再打開第一個提示。<br>鍵盤：<span class="kbd">空白鍵</span> 下一個提示　<span class="kbd">Enter</span> 揭曉　<span class="kbd">→</span> 下一朵</p>
+      <div class="reveal-row">
+        <button class="btn" id="revealBtn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.7 7.6 1 12c1.7 4.4 6 7.5 11 7.5s9.3-3.1 11-7.5c-1.7-4.4-6-7.5-11-7.5zm0 12.5a5 5 0 110-10 5 5 0 010 10zm0-8a3 3 0 100 6 3 3 0 000-6z"/></svg>揭曉答案</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 答案 -->
+<section class="view" id="answer">
+  <div class="bar">
+    <button class="brand" data-go="home" aria-label="回首頁"><span class="lo">FLOWER.</span><span class="bt">猜猜我是什麼花</span></button>
+    <span class="sp"></span>
+    <span class="pill" id="aProg">1 / 21</span>
+    <button class="icon-btn" id="aBack"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg><span class="hide-s">回到提示</span></button>
+    <button class="btn small" id="aNext"><span>下一朵花</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+  <div class="ans" id="ansBody"></div>
+</section>
+
+<!-- 圖鑑 -->
+<section class="view" id="gallery">
+  <div class="bar">
+    <button class="brand" data-go="home" aria-label="回首頁"><span class="lo">FLOWER.</span><span class="bt">猜猜我是什麼花</span></button>
+    <span class="sp"></span>
+    <button class="btn small" data-go="start">開始猜花</button>
+  </div>
+  <div class="wrap">
+    <h2 class="page-title">21 種<span class="p">花朋友圖鑑</span></h2>
+    <p class="qsub">點一朵花，直接從它開始猜；也可以只挑一個季節來玩，例如春天上課就玩「春天的花」。</p>
+    <div class="filters" id="gFilter">
+      <button data-v="all" class="chip on">全部</button><button data-v="spring" class="chip">春天</button><button data-v="summer" class="chip">夏天</button><button data-v="autumn" class="chip">秋天</button><button data-v="winter" class="chip">冬天</button>
+    </div>
+    <div class="ggrid" id="gGrid"></div>
+  </div>
+</section>
+
+<!-- 帶領說明 -->
+<section class="view" id="guide">
+  <div class="bar">
+    <button class="brand" data-go="home" aria-label="回首頁"><span class="lo">FLOWER.</span><span class="bt">猜猜我是什麼花</span></button>
+    <span class="sp"></span>
+    <button class="btn small" data-go="start">開始猜花</button>
+  </div>
+  <div class="wrap">
+    <h2 class="page-title">給帶領者的<span class="p">活動說明</span></h2>
+    <div class="grid2" style="margin-top:18px">
+      <div class="card"><h3><span class="dot"></span>怎麼帶（30–45 分鐘）</h3>
+        <ol class="steps">
+          <li>用投影或大電視開啟本頁，選玩法：長輩建議「看照片猜」，小朋友可以玩「模糊照片」或「局部特寫」（每開一個提示，照片就更清楚、看得更多）。</li>
+          <li>先不給提示，請大家說說看「它是什麼顏色、在哪裡看過、聞起來怎樣」。</li>
+          <li>猜不到就按提示：顏色和花瓣 → 什麼時候開 → 在哪裡看到 → 香味或用途 → 節慶或俗語 → 名字字數。卡住時按「給三個選項」。</li>
+          <li>揭曉後，挑 1–2 個小知識講，再用「聊一聊」的題目讓大家分享回憶。</li>
+          <li>最後看一小段影片，或用 Google 圖片看看更多顏色。</li>
+        </ol></div>
+      <div class="card"><h3><span class="dot"></span>帶領小撇步</h3>
+        <ol class="steps">
+          <li>一次玩 6–8 朵就夠，留時間聊天比答對更重要；可以用「季節」只挑當季的花。</li>
+          <li>長輩常說小名（桐花、喇叭花、蓮花、太陽花），說出小名也算答對。</li>
+          <li>失智症長輩可直接按「給三個選項」，降低挫折感。</li>
+          <li>搭配真花或乾燥花：桂花、茉莉、玉蘭、薰衣草可以帶來聞一聞，做五感刺激。</li>
+          <li>有毒的花（杜鵑、繡球、油桐果實、牽牛種子）頁面上都有提醒，戶外活動時記得叮嚀。</li>
+          <li>影片在 GitHub 網頁版可以直接播放；其他地方會連到 YouTube。</li>
+        </ol></div>
+    </div>
+    <div class="card" style="margin-top:22px">
+      <h3><span class="dot"></span>照片來源與授權</h3>
+      <p class="credit" style="margin-bottom:10px">照片皆來自維基共享資源（Wikimedia Commons），依各自授權標示作者；網頁上為縮小版本。</p>
+      <div style="overflow:auto"><table class="cr" id="imgTable"></table></div>
+    </div>
+    <div class="card" style="margin-top:22px">
+      <h3><span class="dot"></span>首頁海報的古典植物畫</h3>
+      <p class="credit" style="margin-bottom:10px">首頁花卉為 18–19 世紀植物圖鑑（公眾領域，取自 Wikimedia Commons），本頁去背後拼貼；版面構想參考花卉字體海報。</p>
+      <div style="overflow:auto"><table class="cr" id="decoTable"></table></div>
+    </div>
+    <div class="card" style="margin-top:22px">
+      <h3><span class="dot"></span>內容說明</h3>
+      <p class="credit">花期以台灣平地為主，各地與每年氣候會有差異；賞花季日期請以當年官方公告為準。食用與藥用說明僅為文化介紹，不作為醫療建議。影片皆連結 YouTube 原頻道，版權屬原作者。另一個以國花、花語為主的舊版猜花教案：<a href="https://mattsue1003.github.io/flowers-guess/" target="_blank" rel="noopener">花花世界・社區互動猜花教室</a>。</p>
+    </div>
+  </div>
+</section>
+
+<div class="sign" id="footSign" style="display:none">設計者｜愛迪樂　<b>鍾孟修 職能治療師</b></div>
+</div>
+
+<script src="data/flowers.js"></script>
+<script src="data/media.js"></script>
+<script>
+(function(){
+"use strict";
+const F = window.FLOWERS, M = window.MEDIA, D = window.DECO;
+const $ = s=>document.querySelector(s), $$ = s=>[...document.querySelectorAll(s)];
+const esc = s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const store = {get(k,d){try{const v=localStorage.getItem("flowerq_"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("flowerq_"+k,JSON.stringify(v))}catch(e){}}};
+const host = location.hostname;
+const CAN_EMBED = /github\.io$/.test(host) || host==="localhost" || host==="127.0.0.1";
+const SEASON = {spring:"春天",summer:"夏天",autumn:"秋天",winter:"冬天"};
+const ORDER = ["winter","spring","summer","autumn"];
+
+/* ---------- 狀態 ---------- */
+const st = { mode: store.get("mode","see"), order: store.get("order","seq"), season: store.get("season","all"), list: [], pos:0, used:[], filter:"all" };
+function segInit(id,key,after){
+  $$(`#${id} button`).forEach(b=>{b.classList.toggle("on",b.dataset.v===st[key]);b.onclick=()=>{st[key]=b.dataset.v;store.set(key,st[key]);$$(`#${id} button`).forEach(x=>x.classList.toggle("on",x===b));after&&after()}});
+}
+segInit("segMode","mode"); segInit("segOrder","order"); segInit("segSeason","season");
+
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function pool(season){ return F.map((_,i)=>i).filter(i=>season==="all"||F[i].season===season) }
+function buildList(season,startKey){
+  let idx = pool(season);
+  if(st.order==="rand") shuffle(idx);
+  else idx.sort((a,b)=>ORDER.indexOf(F[a].season)-ORDER.indexOf(F[b].season)||a-b);
+  if(startKey){const k=F.findIndex(b=>b.key===startKey); idx=idx.filter(i=>i!==k); idx.unshift(k)}
+  st.list=idx; st.pos=0;
+}
+
+/* ---------- 換頁 ---------- */
+function show(id){
+  $$(".view").forEach(v=>v.classList.toggle("on",v.id===id));
+  $("#footSign").style.display = id==="home"?"none":"block";
+  scrollTo(0,0);
+  if(id==="home"||id==="gallery"||id==="guide") history.replaceState(null,"",location.pathname+location.search);
+}
+document.addEventListener("click",e=>{
+  const g=e.target.closest("[data-go]"); if(!g) return;
+  const v=g.dataset.go;
+  if(v==="start"){ const fromG=$("#gallery").classList.contains("on"); buildList(fromG?st.filter:st.season); openQuiz(); }
+  else { show(v); if(v==="gallery") renderGallery(); }
+});
+
+/* ---------- 猜花 ---------- */
+const HINTS=[
+  {k:"look",label:"顏色和花瓣",tag:"長相"},
+  {k:"when",label:"什麼時候開",tag:"花期"},
+  {k:"where",label:"在哪裡看到",tag:"哪裡看"},
+  {k:"use",label:"香味或用途",tag:"用途"},
+  {k:"saying",label:"節慶或俗語",tag:"俗語"},
+  {k:"len",label:"名字字數",tag:"名字"},
+];
+const cur=()=>F[st.list[st.pos]];
+const nUsed=()=>st.used.filter(k=>k!=="choice").length;
+function applyPhoto(){
+  const img=$("#qImg"), n=nUsed();
+  if(st.mode==="blur"){ const px=[24,18,13,8,4,2,0][Math.min(n,6)]; img.style.filter=px?`blur(${px}px)`:"none"; img.style.transform=px?"scale(1.1)":"none"; }
+  else if(st.mode==="zoom"){ const s=[3.6,3,2.4,1.9,1.5,1.2,1][Math.min(n,6)]; img.style.filter="none"; img.style.transformOrigin="50% 45%"; img.style.transform=`scale(${s})`; }
+  else { img.style.filter="none"; img.style.transform="none"; }
+}
+function openQuiz(){
+  if(!st.list.length) buildList("all");
+  const b=cur(); st.used=[];
+  const img=$("#qImg"); img.style.transition="none"; applyPhoto(); img.src="assets/img/"+b.key+".jpg"; void img.offsetWidth; img.style.transition="";
+  $("#qProg").innerHTML=`<span class="hide-s">第 </span>${st.pos+1}<span class="hide-s"> 朵</span> / ${st.list.length}`;
+  $("#qNum").innerHTML=`${st.pos+1}<small>/${st.list.length}</small>`;
+  $("#hintList").innerHTML=""; $("#emptyTip").style.display="";
+  $("#hintBtns").innerHTML = HINTS.map((h,i)=>`<button class="hbtn" data-h="${h.k}"><span class="n">${i+1}</span>${h.label}</button>`).join("")+`<button class="hbtn" data-h="choice" style="grid-column:1/-1;justify-content:center"><span class="n">?</span>給三個選項</button>`;
+  $$("#hintBtns .hbtn").forEach(x=>x.onclick=()=>reveal(x.dataset.h));
+  $("#qPrev").disabled = st.pos===0;
+  show("quiz");
+  history.replaceState(null,"","#"+b.key);
+}
+function reveal(k){
+  const b=cur(); if(st.used.includes(k)) return;
+  st.used.push(k);
+  $(`#hintBtns [data-h="${k}"]`).classList.add("used");
+  $("#emptyTip").style.display="none";
+  const h=HINTS.find(x=>x.k===k);
+  let html="";
+  if(k==="len"){ const ch=[...b.name]; html=`名字有 <b>${ch.length}</b> 個字，最後一個字是「<b>${esc(ch[ch.length-1])}</b>」。`+(b.alias?`<br>它的別名或小名之一：「${esc(b.alias.split("、")[0])}」。`:""); }
+  else if(k==="choice"){ html=`是哪一個？<div class="choices">${choicesFor(b).map(n=>`<button data-c="${esc(n)}">${esc(n)}</button>`).join("")}</div>`; }
+  else html=esc(b.hints[k]);
+  const li=document.createElement("li");
+  li.innerHTML=`<span class="tag">${h?h.tag:"選項"}</span><div>${html}</div>`;
+  $("#hintList").appendChild(li);
+  li.querySelectorAll(".choices button").forEach(c=>c.onclick=()=>{
+    if(c.dataset.c===b.name){c.classList.add("right");setTimeout(showAnswer,700)}else c.classList.add("wrong");
+  });
+  li.scrollIntoView({block:"nearest",behavior:"smooth"});
+  applyPhoto();
+}
+function choicesFor(b){
+  const others=shuffle(F.filter(x=>x.key!==b.key)); const pick=[b.name];
+  const same=others.filter(x=>x.season===b.season);
+  for(const x of [...same,...others]){ if(pick.length>=3) break; if(!pick.includes(x.name)) pick.push(x.name) }
+  return shuffle(pick);
+}
+function nextHint(){ const h=HINTS.find(h=>!st.used.includes(h.k)); if(h) reveal(h.k); }
+$("#revealBtn").onclick=()=>showAnswer();
+$("#qPrev").onclick=()=>{ if(st.pos>0){st.pos--;openQuiz()} };
+$("#qNext").onclick=()=>goNext();
+function goNext(){ if(st.pos<st.list.length-1){st.pos++;openQuiz()} else { show("gallery"); renderGallery(); } }
+
+/* ---------- 答案 ---------- */
+const ICON_EXT='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></svg>';
+const PLAY='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+function showAnswer(){
+  const b=cur(), m=M[b.key];
+  const n=nUsed();
+  const praise = st.used.length===0?"一眼就認出來了！答案是": n<=1?"厲害！幾乎不用提示，答案是": n<=3?`用了 ${n} 個提示猜到，答案是`:`大家一起想出來了，答案是`;
+  const vids=m.yt.map(v=>{
+    const th=`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`, url=`https://www.youtube.com/watch?v=${v.id}`;
+    if(CAN_EMBED) return `<div class="vid"><div class="th" data-yt="${v.id}" role="button" tabindex="0" aria-label="播放影片"><img src="${th}" alt="" loading="lazy"><span class="pl">${PLAY}</span></div><div class="cap"><b>${esc(v.title)}</b><span>${esc(v.ch)}・<a href="${url}" target="_blank" rel="noopener">在 YouTube 開啟 ↗</a></span></div></div>`;
+    return `<a class="vid" href="${url}" target="_blank" rel="noopener"><div class="th"><img src="${th}" alt="" loading="lazy"><span class="pl">${PLAY}</span></div><div class="cap"><b>${esc(v.title)}</b><span>${esc(v.ch)}・到 YouTube 觀看 ↗</span></div></a>`;
+  }).join("");
+  const lic = m.img.licurl?`<a href="${m.img.licurl}" target="_blank" rel="noopener">${esc(m.img.lic)}</a>`:esc(m.img.lic);
+  const qn=encodeURIComponent(b.name);
+  $("#ansBody").innerHTML=`
+  <div class="ans-hero">
+    <div class="pframe"><div class="photo"><img src="assets/img/${b.key}.jpg" alt="${esc(b.name)}"></div></div>
+    <div class="ans-name">
+      <span class="a">${esc(praise)}</span>
+      <span class="b">${esc(b.name)}</span>
+      <span class="c">${esc(b.en)}</span>
+      <span class="d">${esc(b.sci)}</span>
+      <div class="badges"><span class="badge">${SEASON[b.season]}的花</span><span class="badge s">花期：${esc(b.months)}</span>${b.alias?`<span class="badge s">別名：${esc(b.alias)}</span>`:""}</div>
+    </div>
+  </div>
+  <div class="grid3">
+    <div class="card"><h3><span class="dot"></span>在台灣哪裡看</h3><p>${esc(b.where)}</p></div>
+    <div class="card"><h3><span class="dot"></span>花語與文化</h3><p>${esc(b.lang)}</p></div>
+    <div class="card"><h3><span class="dot"></span>可以拿來做什麼</h3><p>${esc(b.use)}</p>${b.safe?`<div class="safe"><b>注意</b><span>${esc(b.safe)}</span></div>`:""}</div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3><span class="dot"></span>你知道嗎？</h3><ul class="facts">${b.facts.map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div>
+    <div class="card"><h3><span class="dot"></span>聊一聊</h3><div class="talk">${b.talk.map(t=>`<div>${esc(t)}</div>`).join("")}<div class="kidq">考考小朋友：${esc(b.kid)}</div></div></div>
+  </div>
+  <div class="card"><h3><span class="dot"></span>看更多</h3>
+    <div class="linkrow">
+      <a class="chip" href="https://www.google.com/search?tbm=isch&q=${qn}" target="_blank" rel="noopener">${ICON_EXT}Google 圖片</a>
+      <a class="chip" href="https://www.youtube.com/results?search_query=${encodeURIComponent(b.name+" #shorts")}" target="_blank" rel="noopener">${ICON_EXT}YouTube 短影音</a>
+      <a class="chip" href="https://zh.wikipedia.org/w/index.php?variant=zh-tw&search=${encodeURIComponent(b.sci.split(/[（(]/)[0].trim())}" target="_blank" rel="noopener">${ICON_EXT}維基百科</a>
+    </div>
+    <div class="vids">${vids}</div>
+    <p class="credit">照片：${esc(m.img.author)}，${lic}，<a href="${m.img.page}" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+  </div>
+  <div class="ans-nav"><button class="btn ghost" id="aBack2">回到提示</button><button class="btn" id="aNext2">下一朵花</button></div>`;
+  $$("[data-yt]").forEach(t=>{const go=()=>{t.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${t.dataset.yt}?autoplay=1&rel=0" title="YouTube 影片" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`};t.onclick=go;t.onkeydown=e=>{if(e.key==="Enter")go()}});
+  $("#aBack2").onclick=$("#aBack").onclick=()=>show("quiz");
+  $("#aNext2").onclick=$("#aNext").onclick=()=>goNext();
+  $("#aProg").innerHTML=`<span class="hide-s">第 </span>${st.pos+1}<span class="hide-s"> 朵</span> / ${st.list.length}`;
+  const last = st.pos>=st.list.length-1;
+  $("#aNext span").textContent = last?"看圖鑑":"下一朵花"; $("#aNext2").textContent = last?"看圖鑑":"下一朵花";
+  const done=store.get("done",[]); if(!done.includes(b.key)){done.push(b.key);store.set("done",done)}
+  show("answer");
+  history.replaceState(null,"","#"+b.key);
+}
+
+/* ---------- 圖鑑 ---------- */
+function renderGallery(){
+  $$("#gFilter button").forEach(x=>{x.classList.toggle("on",x.dataset.v===st.filter);x.onclick=()=>{st.filter=x.dataset.v;renderGallery()}});
+  const done=store.get("done",[]);
+  const list=pool(st.filter).sort((a,b)=>ORDER.indexOf(F[a].season)-ORDER.indexOf(F[b].season)||a-b).map(i=>F[i]);
+  $("#gGrid").innerHTML=list.map(b=>`<button class="gitem${done.includes(b.key)?" done":""}" data-k="${b.key}"><img src="assets/img/${b.key}.jpg" alt="${esc(b.name)}" loading="lazy"><div><em>${SEASON[b.season]}・${esc(b.months.split("（")[0])}</em><b>${esc(b.name)}</b><span>${esc(b.sci.split(/[（(]/)[0])}</span></div></button>`).join("");
+  $$("#gGrid .gitem").forEach(x=>x.onclick=()=>{buildList(st.filter,x.dataset.k);openQuiz()});
+}
+
+/* ---------- 來源表 ---------- */
+$("#imgTable").innerHTML="<tr><th>花</th><th>攝影者</th><th>授權</th><th>原始檔案</th></tr>"+F.map(b=>{const i=M[b.key].img;return `<tr><td>${esc(b.name)}</td><td>${esc(i.author)}</td><td>${i.licurl?`<a href="${i.licurl}" target="_blank" rel="noopener">${esc(i.lic)}</a>`:esc(i.lic)}</td><td><a href="${i.page}" target="_blank" rel="noopener">Commons</a></td></tr>`}).join("");
+$("#decoTable").innerHTML="<tr><th>圖</th><th>原作者／出處</th><th>授權</th><th>原始檔案</th></tr>"+Object.values(D).map(d=>`<tr><td>${esc(d.t)}</td><td>${esc(d.a)}</td><td>公眾領域</td><td><a href="${d.page}" target="_blank" rel="noopener">Commons</a></td></tr>`).join("");
+
+/* ---------- 鍵盤 ---------- */
+addEventListener("keydown",e=>{
+  if(e.target.closest("input,textarea")) return;
+  const q=$("#quiz").classList.contains("on"), a=$("#answer").classList.contains("on");
+  if(q&&(e.key===" "||e.key==="ArrowDown")){e.preventDefault();nextHint()}
+  else if(q&&e.key==="Enter"){e.preventDefault();showAnswer()}
+  else if((q||a)&&e.key==="ArrowRight"){goNext()}
+  else if(q&&e.key==="ArrowLeft"){$("#qPrev").click()}
+  else if(e.key==="Escape"){show("home")}
+});
+
+/* ---------- 網址 #key 直接開 ---------- */
+function fromHash(){const hk=decodeURIComponent(location.hash.slice(1)); if(hk && F.some(b=>b.key===hk) && !(st.list.length && cur().key===hk && !$("#home").classList.contains("on"))){buildList("all",hk);openQuiz()}}
+fromHash(); addEventListener("hashchange",fromHash);
+})();
+</script>
+</body>
+</html>
