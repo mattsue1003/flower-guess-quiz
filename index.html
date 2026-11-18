@@ -67,6 +67,9 @@ a{color:var(--rose)}
 .poster .letters{position:absolute;left:20%;right:20%;top:9%;bottom:16%;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(4,1fr);z-index:3;font-family:"Jost",sans-serif;font-weight:700;color:var(--pink);font-size:22cqw;line-height:1;text-shadow:0 2cqw 3cqw rgba(196,65,111,.16)}
 .poster .letters span{display:flex;align-items:center;justify-content:center}
 .poster .letters .dash{font-weight:600}
+.poster .letters.zh{grid-template-rows:repeat(3,1fr);font-family:"Noto Serif TC","Songti TC",serif;font-weight:700;font-size:25cqw}
+.poster .letters.zh .dash{font-family:"Jost",sans-serif;font-size:20cqw}
+.poster .letters.zh .dot{font-family:"Jost",sans-serif;font-size:22cqw;justify-content:flex-start;align-items:flex-end;padding:0 0 4cqw 3cqw}
 .poster .fl{position:absolute;filter:var(--cut);pointer-events:none;user-select:none}
 .poster .fl.back{z-index:1}.poster .fl.mid{z-index:2}.poster .fl.front{z-index:4}
 @media (prefers-reduced-motion:no-preference){
@@ -229,9 +232,9 @@ table.cr th{color:var(--muted);font-weight:700;white-space:nowrap}
 
 <!-- 首頁 -->
 <section class="view on" id="home">
-  <div class="poster" id="poster" aria-label="FLOWER 花卉海報">
+  <div class="poster" id="poster" aria-label="花之季 花卉海報">
     <div class="frame"></div>
-    <div class="letters" aria-hidden="true"><span>F</span><span>L</span><span>O</span><span class="dash">–</span><span class="dash">–</span><span>W</span><span>E</span><span>R.</span></div>
+    <div class="letters zh" aria-hidden="true"><span>花</span><span class="dash">–</span><span class="dash">–</span><span>之</span><span>季</span><span class="dot">.</span></div>
     <img class="fl back"  src="assets/deco/lotusi.png"  alt="" style="width:44cqw;left:48cqw;top:0cqw;--r0:6deg">
     <img class="fl back"  src="assets/deco/rosag.png"   alt="" style="width:28cqw;left:0cqw;top:20cqw;--r0:-10deg">
     <img class="fl mid"   src="assets/deco/peony.png"   alt="" style="width:38cqw;left:30cqw;top:36cqw;--r0:-3deg">
