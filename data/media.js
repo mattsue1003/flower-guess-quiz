@@ -18,6 +18,20 @@ window.MEDIA={
     "title": "【南投景點】 2026 梅花季｜九份二山銀白世界｜走進國姓九尖茶廠梅花林",
     "ch": "CHIN WU"
    }
+  ],
+  "more": [
+   {
+    "author": "Laitche",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Flowers_of_Prunus_mume_(Armeniaca_mume_%E2%80%98Setsugekka%E2%80%99)_at_Nagai_Park,_January_2024_-_9435.jpg"
+   },
+   {
+    "author": "Dinkun Chen",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pink_Prunus_mume_flowers.jpg"
+   }
   ]
  },
  "sakura": {
@@ -37,6 +51,20 @@ window.MEDIA={
     "id": "3nfokNsRm9E",
     "title": "賞櫻季到! 竹山鎮垂櫻.信義鄉山櫻花盛開｜華視新聞 20220120",
     "ch": "華視新聞 CH52"
+   }
+  ],
+  "more": [
+   {
+    "author": "阿橋 HQ",
+    "lic": "CC BY-SA 2.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%E9%90%98%E8%8A%B1%E6%AB%BB%E6%A1%83_Cerasus_campanulata_-%E6%98%86%E6%98%8E%E9%BB%91%E9%BE%8D%E6%BD%AD%E6%A2%85%E5%9C%92_Kunming,_China-_(25224581797).jpg"
+   },
+   {
+    "author": "Walter Rumsby from Queenstown, New Zealand",
+    "lic": "CC BY-SA 2.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pair_of_tui_in_flowering_tree.jpg"
    }
   ]
  },
@@ -58,6 +86,20 @@ window.MEDIA={
     "title": "杜鵑花季登場 16萬株杜鵑開滿台北城－民視新聞",
     "ch": "民視新聞網 Formosa TV News network"
    }
+  ],
+  "more": [
+   {
+    "author": "Kritzolina",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rhododendron_%27Ernst_Thiers%27_im_botanischen_Garten_M%C3%BCnchen-Nymphenburg_02.jpg"
+   },
+   {
+    "author": "Chrumps",
+    "lic": "CC BY 3.0",
+    "licurl": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rhododendron_williamsianum_(flower).jpg"
+   }
   ]
  },
  "tung": {
@@ -77,6 +119,20 @@ window.MEDIA={
     "id": "3Og3gFSKbdU",
     "title": "苗栗客家桐花祭，浪漫飄逸五月雪～四月初至五月初登場～",
     "ch": "台灣趴趴走旅宿網"
+   }
+  ],
+  "more": [
+   {
+    "author": "Ping an Chang",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8%E6%B2%B9%E6%A1%90%EF%BC%88%E5%8D%83%E5%B9%B4%E6%A1%90%EF%BC%89Vernicia_montana_20210326150211_05.jpg"
+   },
+   {
+    "author": "Ping an Chang",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%E6%9C%A8%E6%B2%B9%E6%A1%90%EF%BC%88%E5%8D%83%E5%B9%B4%E6%A1%90%EF%BC%89Vernicia_montana_20210326150211_07.jpg"
    }
   ]
  },
@@ -98,6 +154,20 @@ window.MEDIA={
     "title": "白河蓮花季.賞荷 | 2026.6.21",
     "ch": "吉米.野去"
    }
+  ],
+  "more": [
+   {
+    "author": "Prenn",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nelumbo_nucifera_01.JPG"
+   },
+   {
+    "author": "Quartl",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nelumbo_nucifera_qtl1.jpg"
+   }
   ]
  },
  "sunflower": {
@@ -117,6 +187,20 @@ window.MEDIA={
     "id": "dllsmxIRfBI",
     "title": "美翻！苗栗造橋向日葵花海 吸引大批遊客朝聖",
     "ch": "台視新聞 TTV NEWS"
+   }
+  ],
+  "more": [
+   {
+    "author": "Johann Jaritz",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Eberndorf_K%C3%B6cking_Sonnenblumenfeld_Biohof_Tomic_18072014_0792.jpg"
+   },
+   {
+    "author": "Jebulon",
+    "lic": "Public domain",
+    "licurl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Helianthus_annuusPFP.jpg"
    }
   ]
  },
@@ -138,6 +222,20 @@ window.MEDIA={
     "title": "玫瑰媽媽陳主奉 台北玫瑰園推手 |【民生八方事】| 2022031602 @gtvnews27",
     "ch": "八大民生新聞"
    }
+  ],
+  "more": [
+   {
+    "author": "Agnes Monkelbaan",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rosa_%27Matador%27_(actm).jpg"
+   },
+   {
+    "author": "Dominicus Johannes Bergsma",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rosa_%27Nostalgie%27_(d.j.b)_02.jpg"
+   }
   ]
  },
  "orchid": {
@@ -157,6 +255,20 @@ window.MEDIA={
     "id": "X_xrlVHRmw4",
     "title": "大武蝴蝶蘭, Dawu Mountain, Phalaenopsis Aphrodite subsp. Formosana，野生台灣阿婆蝴蝶蘭, 台東,台灣原生種蝴蝶蘭，20240229",
     "ch": "台灣阿花Taiwan wild native orchid"
+   }
+  ],
+  "more": [
+   {
+    "author": "Mister rf",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Orchidaceae_flowers_-_magenta_colour.jpg"
+   },
+   {
+    "author": "Agnes Monkelbaan",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Orchidee_(phalaenopsis)_(actm)_04.jpg"
    }
   ]
  },
@@ -178,6 +290,20 @@ window.MEDIA={
     "title": "銅鑼杭菊季2021最新空拍│台灣最香的花海! 苗栗景點│坐火車去銅鑼杭菊秘境│銅鑼杭菊路線│ 「2021銅鑼杭菊生活節」菊內人│愛上台灣368 │粵語有字幕",
     "ch": "旅遊達人項明生 James Hong Official "
    }
+  ],
+  "more": [
+   {
+    "author": "AjayDas",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chrysanthemum_%C3%97_morifolium_Flowers_05.jpg"
+   },
+   {
+    "author": "AjayDas",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chrysanthemum_%C3%97_morifolium_Flowers_09.jpg"
+   }
   ]
  },
  "osmanthus": {
@@ -197,6 +323,20 @@ window.MEDIA={
     "id": "bvSr5mWqwLE",
     "title": "石碇山中桂花園 好空氣飄散桂花料理香 part4 台灣1001個故事｜白心儀",
     "ch": "台灣Cheers"
+   }
+  ],
+  "more": [
+   {
+    "author": "A16898",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Osmanthus_fragrans_Db100016.JPG"
+   },
+   {
+    "author": "peganum from Small Dole, England",
+    "lic": "CC BY-SA 2.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Osmanthus_fragrans_-_Flickr_-_peganum.jpg"
    }
   ]
  },
@@ -218,6 +358,20 @@ window.MEDIA={
     "title": "茉莉花減產9成花茶.香皂製作受影響",
     "ch": "台視新聞 TTV NEWS"
    }
+  ],
+  "more": [
+   {
+    "author": "Jaka firman purnama",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Melati_Putih_(Jasminum_sambac),_Bandung,_Jawa_Barat.jpg"
+   },
+   {
+    "author": "Elavarasi.v",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jasminum_sambac_pic.jpg"
+   }
   ]
  },
  "yulan": {
@@ -237,6 +391,20 @@ window.MEDIA={
     "id": "YmbG4R-kS0Y",
     "title": "因應市場需求 陳全明兼職種玉蘭花【客家新聞20170721】",
     "ch": "客家新聞 Hakka News"
+   }
+  ],
+  "more": [
+   {
+    "author": "Prenn",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Magnolia_%C3%97_alba_(2).JPG"
+   },
+   {
+    "author": "takuma mori",
+    "lic": "CC BY 2.0",
+    "licurl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2009-12-28_flower_vendor_near_the_Bangka_Lungshan_Temple.jpg"
    }
   ]
  },
@@ -258,6 +426,20 @@ window.MEDIA={
     "title": "近百種品種「九重葛」　吳媽媽花園目標成為亞洲第一－民視新聞",
     "ch": "民視新聞網 Formosa TV News network"
    }
+  ],
+  "more": [
+   {
+    "author": "Boopathi Raja123",
+    "lic": "CC0",
+    "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Bougainvillea_flower_*.jpg"
+   },
+   {
+    "author": "Nativeplants garden",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bougainvillea_flower_at_Pulikurumba.jpg"
+   }
   ]
  },
  "morning": {
@@ -277,6 +459,20 @@ window.MEDIA={
     "id": "2IRA1-HQV7c",
     "title": "爬牆高手~槭葉牽牛",
     "ch": "臺北市政府工務局療癒系列"
+   }
+  ],
+  "more": [
+   {
+    "author": "Bff",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ipomoea_nil_Gorlitsa20230618_20348.jpg"
+   },
+   {
+    "author": "そらみみ",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Flower_of_Ipomoea_nil_20180624.jpg"
    }
   ]
  },
@@ -298,6 +494,20 @@ window.MEDIA={
     "title": "曇花 開花縮時影片; Epiphyllum Oxypetalum Flowering Time Lapse;",
     "ch": "GJ-YEH"
    }
+  ],
+  "more": [
+   {
+    "author": "Samudra Dirgantara",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Epiphyllum_oxypetalum_or_wijaya_kusuma_flowers.jpg"
+   },
+   {
+    "author": "Alfieri José Larocca",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Epiphyllum_oxypetalum_(flower).JPG"
+   }
   ]
  },
  "hydrangea": {
@@ -317,6 +527,20 @@ window.MEDIA={
     "id": "Gmfj72xJhPk",
     "title": "初夏的陽明山竹子湖迎來年度最美盛景繡球花開始綻放",
     "ch": "發掘新傳媒"
+   }
+  ],
+  "more": [
+   {
+    "author": "Basile Morin",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hydrangea_macrophylla_in_front_of_Seongsan_Ilchulbong_volcano_at_blue_hour_in_Jeju_Island_South_Korea.jpg"
+   },
+   {
+    "author": "Bernard Gagnon",
+    "lic": "CC BY 4.0",
+    "licurl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hydrangea_macrophylla,_L%C3%A9vis.jpg"
    }
   ]
  },
@@ -338,6 +562,20 @@ window.MEDIA={
     "title": "台南大學校園·阿伯勒盛開｜同框鳳凰花￼￼，畢業季稍來淡淡的離愁…￼",
     "ch": "看見台灣四季美景"
    }
+  ],
+  "more": [
+   {
+    "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to ",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Delonix_regia_-_Gulmohar_Theppakadu_Junction_Mudumalai_Apr24_A7C_10871.jpg"
+   },
+   {
+    "author": "Aruna at Malayalam Wikipedia",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Delonix_regia_-_GulmoharFlower.jpg"
+   }
   ]
  },
  "cassia": {
@@ -357,6 +595,20 @@ window.MEDIA={
     "id": "8-KjmJ2SIEI",
     "title": "目擊台灣浪漫黃金雨《阿勃勒》花海絕美盛放！",
     "ch": "陳春旭(陳九)"
+   }
+  ],
+  "more": [
+   {
+    "author": "Basile Morin",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Cassia_fistula_(Golden_rain_tree)_flowers.jpg"
+   },
+   {
+    "author": "Shagil Kannur",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Flower_of_Cassia_fistula--in_Kannur.jpg"
    }
   ]
  },
@@ -378,6 +630,20 @@ window.MEDIA={
     "title": "《復育台灣百合》客家新聞雜誌第554集",
     "ch": "客家電視 HakkaTV"
    }
+  ],
+  "more": [
+   {
+    "author": "Ping an Chang",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E7%81%A3%E7%99%BE%E5%90%88_20190420201235.jpg"
+   },
+   {
+    "author": "Chihiro H",
+    "lic": "CC BY 3.0",
+    "licurl": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lily_%E3%82%B7%E3%83%B3%E3%82%BF%E3%82%AB%E3%82%B5%E3%82%B4%E3%83%A6%E3%83%AA_(123951689).jpeg"
+   }
   ]
  },
  "lavender": {
@@ -397,6 +663,20 @@ window.MEDIA={
     "id": "RjprcxQDkzQ",
     "title": "葛瑞絲香草田！免費入場！全台最大7000坪薰衣草花田！",
     "ch": "DIY花園 & 酷媽看世界"
+   }
+  ],
+  "more": [
+   {
+    "author": "Steffen Bauer (saatpilot.de)",
+    "lic": "CC BY 4.0",
+    "licurl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lavandula_angustifolia_(English_lavender),_flower_spikes_(SaatPilot).jpg"
+   },
+   {
+    "author": "Andrey Butko",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lavandula_angustifolia_in_Sedovo_1.jpg"
    }
   ]
  },
@@ -418,6 +698,20 @@ window.MEDIA={
     "title": "［記錄美好］「大波斯菊」（學名：Cosmos bipinnatus； garden cosmos；Mexican aster），台灣的休耕農田到處可見，大蔚阿昌（David Liao)",
     "ch": "David Liao大蔚阿昌"
    }
+  ],
+  "more": [
+   {
+    "author": "Friedrich Haag",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Blueten_002_2021_08_23.jpg"
+   },
+   {
+    "author": "Kryesmin",
+    "lic": "CC0",
+    "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Cosmos_bipinnatus_(flowers)_03.jpg"
+   }
   ]
  },
  "kapok": {
@@ -437,6 +731,20 @@ window.MEDIA={
     "id": "rCEDXM1f-rU",
     "title": "季節限定!! 2023 台南將軍木棉花道大量盛開【苓子寮木棉花道】 | 2023.4.2現場實景 | 4K空拍",
     "ch": "Fly with Randy"
+   }
+  ],
+  "more": [
+   {
+    "author": "John Robert McPherson",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bombax_ceiba_inflorescence_74_Sunbury_St_Geebung_P1100679.jpg"
+   },
+   {
+    "author": "Satdeep Gill",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bombax_ceiba_flower_in_Ludhiana.jpg"
    }
   ]
  },
@@ -458,6 +766,20 @@ window.MEDIA={
     "title": "花蓮赤科山｜走進金針花海，山林中的金色花毯【2026秋.Taiwan旅遊趣】",
     "ch": "Lissa 世界旅遊趣"
    }
+  ],
+  "more": [
+   {
+    "author": "George Chernilevsky",
+    "lic": "Public domain",
+    "licurl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Hemerocallis_fulva_2012_G1.jpg"
+   },
+   {
+    "author": "George Chernilevsky",
+    "lic": "Public domain",
+    "licurl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Hemerocallis_fulva_2009_G2.jpg"
+   }
   ]
  },
  "calla": {
@@ -477,6 +799,20 @@ window.MEDIA={
     "id": "OTlAfJXTu04",
     "title": "「#竹子湖 海芋季」陽明山 海芋 花況5成以上滿開 櫻花也不少 | 台北景點 | 台北一日遊 | Calla Lily Farm in Tawan YangMingShan",
     "ch": "After Work Go Go下班走一走"
+   }
+  ],
+  "more": [
+   {
+    "author": "Krzysztof Ziarnek, Kenraiz",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Zantedeschia_aethiopica_kz01.jpg"
+   },
+   {
+    "author": "Petro Stelte",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Zantedeschia-aethiopica-Sitia-Crete.jpg"
    }
   ]
  },
@@ -498,6 +834,20 @@ window.MEDIA={
     "title": "不用飛出國！杉林溪也有鬱金香花海-台灣生活新聞",
     "ch": "台灣生活新聞 Taiwan Daily Network"
    }
+  ],
+  "more": [
+   {
+    "author": "Igor123121",
+    "lic": "CC BY 4.0",
+    "licurl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tulipa_gesneriana,_2026,_Poland_(18).jpg"
+   },
+   {
+    "author": "JackyM59",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tulipe_des_jardins_(Tulipa_gesneriana).jpg"
+   }
   ]
  },
  "carnation": {
@@ -517,6 +867,20 @@ window.MEDIA={
     "id": "PkuauDkCjVk",
     "title": "迎接五月母親節! 國產康乃馨價格漲-大台中新聞",
     "ch": "台灣生活新聞 Taiwan Daily Network"
+   }
+  ],
+  "more": [
+   {
+    "author": "Forest & Kim Starr",
+    "lic": "CC BY 3.0",
+    "licurl": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Starr_070730-7932_Dianthus_caryophyllus.jpg"
+   },
+   {
+    "author": "阿橋 HQ",
+    "lic": "CC BY-SA 2.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%E5%BA%B7%E4%B9%83%E9%A6%A8(%E9%A6%99%E7%9F%B3%E7%AB%B9)_Dianthus_caryophyllus_-%E9%A6%99%E6%B8%AF%E8%8A%B1%E5%B1%95_Hong_Kong_Flower_Show-_(20103253689).jpg"
    }
   ]
  },
@@ -538,6 +902,20 @@ window.MEDIA={
     "title": "一日限定!「朱槿花展」台北登場 八大民生新聞 2020100404",
     "ch": "八大民生新聞"
    }
+  ],
+  "more": [
+   {
+    "author": "B.navez",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hibiscus_rosa-sinensis_flower_2.JPG"
+   },
+   {
+    "author": "Vengolis",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hibiscus_rosa-sinensis_21.jpg"
+   }
   ]
  },
  "camellia": {
@@ -557,6 +935,20 @@ window.MEDIA={
     "id": "h5lTIXDV61M",
     "title": "大台中新聞 神岡秘密花徑 台灣本土茶花盛開",
     "ch": "台灣生活新聞 Taiwan Daily Network"
+   }
+  ],
+  "more": [
+   {
+    "author": "PumpkinSky",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Camellia_japonica_-_white_NBG.jpg"
+   },
+   {
+    "author": "Kızıl",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Camellia_japonica%E2%80%93IMG_6804.jpg"
    }
   ]
  },
@@ -578,6 +970,20 @@ window.MEDIA={
     "title": "大台中新聞大肚百年雞蛋花開",
     "ch": "台灣生活新聞 Taiwan Daily Network"
    }
+  ],
+  "more": [
+   {
+    "author": "Aathavan jaffna",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Plumeria_rubra_flower_in_jaffna.jpg"
+   },
+   {
+    "author": "পাপৰি বৰা",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Plumeria_flower_(33224).jpg"
+   }
   ]
  },
  "narcissus": {
@@ -597,6 +1003,20 @@ window.MEDIA={
     "id": "HqDAqb0zaEs",
     "title": "祀典武廟水仙花雕刻展 找回年節傳統氣氛 今日大話新聞",
     "ch": "今日大話NeWS"
+   }
+  ],
+  "more": [
+   {
+    "author": "Zachi Evenor",
+    "lic": "CC BY 2.0",
+    "licurl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Narcissus-tazetta-2014-Zachi-Evenor.jpg"
+   },
+   {
+    "author": "そらみみ",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Flowers_of_Narcissus_tazetta_20180310.jpg"
    }
   ]
  },
@@ -618,6 +1038,20 @@ window.MEDIA={
     "title": "四百棵七里香花開如白雪一片",
     "ch": "台視新聞 TTV NEWS"
    }
+  ],
+  "more": [
+   {
+    "author": "Ralff Nestor Nacor",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Murraya_paniculata_from_NCHU,_Taichung.jpg"
+   },
+   {
+    "author": "Shuvaev",
+    "lic": "CC BY 4.0",
+    "licurl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Murraya_paniculata,_Longwood_Gardens_2023_03.jpg"
+   }
   ]
  },
  "peach": {
@@ -637,6 +1071,20 @@ window.MEDIA={
     "id": "jlrft3uVQZ8",
     "title": "拉拉山水蜜桃花季",
     "ch": "艾真Emily"
+   }
+  ],
+  "more": [
+   {
+    "author": "Fanghong",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:PrunusPersica4.jpg"
+   },
+   {
+    "author": "Krish Dulal",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Prunus_persica_flower_NP.jpg"
    }
   ]
  },
@@ -658,6 +1106,20 @@ window.MEDIA={
     "title": "2021苦楝花.春天開花，紫白色的小花具淡淡的清香! China tree",
     "ch": "Ahcm1456"
    }
+  ],
+  "more": [
+   {
+    "author": "Dinkun Chen",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Melia_azedarach_in_China_(5).jpg"
+   },
+   {
+    "author": "YuriNikolai",
+    "lic": "CC BY 4.0",
+    "licurl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Melia_azedarach_from_the_Cap%C3%A3o_da_Imbuia_2.jpg"
+   }
   ]
  },
  "gingerlily": {
@@ -677,6 +1139,20 @@ window.MEDIA={
     "id": "NQ-zS9VGZRg",
     "title": "全台最大產地 屏東縣鹽埔野薑花 |【民生八方事】| 2022102906 @gtvnews27",
     "ch": "八大民生新聞"
+   }
+  ],
+  "more": [
+   {
+    "author": "Forest & Kim Starr",
+    "lic": "CC BY 3.0",
+    "licurl": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Starr_050817-3949_Hedychium_coronarium.jpg"
+   },
+   {
+    "author": "Vijayanrajapuram",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hedychium_coronarium_white_ginger_lily_vijayanrajapuram.jpg"
    }
   ]
  },
@@ -698,6 +1174,20 @@ window.MEDIA={
     "title": "山佳荷花池～睡蓮盛開_小提醒這裡的睡蓮清晨花苞開起下午閉合就看不到盛開112/5/8（阿力的拍照記錄）￼",
     "ch": "yehhsinte阿力的拍照紀錄"
    }
+  ],
+  "more": [
+   {
+    "author": "Petar Milošević",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nymphaea_Laydekeri_Purpurata.jpg"
+   },
+   {
+    "author": "Cephas",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nymphaea_odorata_PP.jpg"
+   }
   ]
  },
  "flamevine": {
@@ -717,6 +1207,20 @@ window.MEDIA={
     "id": "v7Bhl5AQho4",
     "title": "花開迎新春! 鶯歌永吉公園炮仗花季起跑｜華視新聞 20220120",
     "ch": "華視新聞 CH52"
+   }
+  ],
+  "more": [
+   {
+    "author": "Pinakpani",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pyrostegia_venusta_flower_in_India_01.jpg"
+   },
+   {
+    "author": "Dolon Prova",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pyrostegia_venusta_flowers.jpg"
    }
   ]
  },
@@ -738,6 +1242,20 @@ window.MEDIA={
     "title": "20201102 南迴紅寶石！台東金峰\"洛神花\"紅透盛開",
     "ch": "佛光山人間衛視"
    }
+  ],
+  "more": [
+   {
+    "author": "Forest and Kim Starr",
+    "lic": "CC BY 2.0",
+    "licurl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Starr-211012-0758-Hibiscus_sabdariffa-flower_calyx-Lowes_Kahului-Maui_(52433524025).jpg"
+   },
+   {
+    "author": "Horacio Cambeiro",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Roselle_flower_(Hibiscus_Sabdariffa)_in_Capiov%C3%AD.jpg"
+   }
   ]
  },
  "poinsettia": {
@@ -757,6 +1275,20 @@ window.MEDIA={
     "id": "ZrFqxXiIRKU",
     "title": "聖誕紅達人興大園藝系陳彥銘老師談「聖誕紅的挑選與照顧」",
     "ch": "國立中興大學 NCHU News Channel"
+   }
+  ],
+  "more": [
+   {
+    "author": "SAplants",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Euphorbia_pulcherrima_cultivar-B_5Dsr_4014.jpg"
+   },
+   {
+    "author": "Gauravggs",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Euphorbia_pulcherrima_flowers_2019.jpg"
    }
   ]
  },
@@ -778,6 +1310,20 @@ window.MEDIA={
     "title": "季節限定黃金隧道｜朴子溪畔｜黃花風鈴木｜嘉義縣六腳鄉",
     "ch": "慢遊嘉義CHIAYI TRAVEL"
    }
+  ],
+  "more": [
+   {
+    "author": "Ileana Herrera",
+    "lic": "CC BY 4.0",
+    "licurl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Handroanthus_chrysanthus_333230273.jpg"
+   },
+   {
+    "author": "Juliocesarat",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Flor_de_Araguaney_(Nirgua_-Yaracuy).jpg"
+   }
   ]
  },
  "wisteria": {
@@ -797,6 +1343,20 @@ window.MEDIA={
     "id": "TUuhXOY51o4",
     "title": "20年樹齡紫藤花盛開 福壽山農場好夢幻",
     "ch": "台視新聞 TTV NEWS"
+   }
+  ],
+  "more": [
+   {
+    "author": "Michal Klajban",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Wisteria_sinensis,_Christchurch_Botanic_Gardens,_Canterbury,_New_Zealand_26.jpg"
+   },
+   {
+    "author": "Krzysztof Ziarnek, Kenraiz",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Wisteria_sinensis_kz05.jpg"
    }
   ]
  }

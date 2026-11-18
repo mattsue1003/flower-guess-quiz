@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>猜猜我是什麼花 台灣四季花朋友</title>
-<meta name="description" content="40 種台灣常見花的看圖猜花活動：一步一步給提示、揭曉後看花語、花期、賞花地點與小知識，附影片與長輩聊天題。適合長輩與小朋友團體帶領。">
+<meta name="description" content="40 種台灣常見花的看圖猜花活動（每種 3 張照片）：一步一步給提示、揭曉後看花語、花期、賞花地點與小知識，附影片與長輩聊天題。適合長輩與小朋友團體帶領。">
 <meta property="og:title" content="猜猜我是什麼花｜台灣四季花朋友">
 <meta property="og:description" content="一步一步給提示的猜花活動，附賞花地點、花語、影片與聊天題。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,6 +113,13 @@ h1.ttl small{display:block;font-family:"Noto Sans TC",sans-serif;font-weight:500
 .pframe::before{content:"";position:absolute;inset:0 32px 40px 0;border:2px solid var(--pink);z-index:2;pointer-events:none}
 .photo{position:relative;overflow:hidden;background:#dfe9ef;aspect-ratio:4/3.3;box-shadow:var(--shadow);margin-left:20px;margin-top:20px}
 .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:filter .6s,transform .7s}
+.pnav{position:absolute;top:50%;z-index:2;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;border:0;background:rgba(255,255,255,.88);color:var(--rose);display:grid;place-items:center;box-shadow:0 6px 18px -6px rgba(40,50,70,.45);transition:background .15s,transform .15s}
+.pnav:hover{background:#fff;transform:translateY(-50%) scale(1.06)}
+.pnav svg{width:26px;height:26px}
+.pnav.prev{left:12px}.pnav.next{right:12px}
+.pbar{position:absolute;left:50%;bottom:12px;z-index:2;transform:translateX(-50%);display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.9);border-radius:999px;padding:6px 8px 6px 14px;box-shadow:0 6px 18px -8px rgba(40,50,70,.45);font-size:16px;font-weight:700;color:var(--ink,#333);white-space:nowrap}
+.pbar button{width:16px;height:16px;border-radius:50%;border:2px solid var(--pink);background:#fff;padding:0}
+.pbar button.on{background:var(--rose);border-color:var(--rose)}
 .qnum{position:absolute;right:0;bottom:0;z-index:3;font-family:"Jost",sans-serif;font-weight:700;font-size:72px;line-height:.8;color:var(--pink);text-shadow:0 6px 16px rgba(196,65,111,.2)}
 .qnum small{font-size:.38em;color:var(--muted);font-weight:600}
 .panel{background:var(--card);box-shadow:var(--shadow);padding:clamp(20px,2.6vw,34px);position:relative}
@@ -245,7 +252,7 @@ table.cr th{color:var(--muted);font-weight:700;white-space:nowrap}
   <div class="intro">
     <p class="eyebrow">GUESS THE FLOWER</p>
     <h1 class="ttl">猜猜我是<span class="p">什麼花</span><small>台灣四季花朋友・40 種</small></h1>
-    <p class="lede">從過年的梅花、春天的油桐花，到夏天的鳳凰花、秋天的桂花。先看照片，按鈕一個一個打開提示，大家猜到了再揭曉，一起聊聊和這朵花有關的回憶。</p>
+    <p class="lede">從過年的梅花、春天的油桐花，到夏天的鳳凰花、秋天的桂花。先看照片（每種花有 3 張照片，可以換著看），按鈕一個一個打開提示，大家猜到了再揭曉，一起聊聊和這朵花有關的回憶。</p>
     <div class="home-actions">
       <button class="btn" data-go="start"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>開始猜花</button>
       <button class="btn ghost" data-go="gallery">花朋友圖鑑</button>
@@ -275,7 +282,7 @@ table.cr th{color:var(--muted);font-weight:700;white-space:nowrap}
   </div>
   <div class="stage">
     <div class="pframe">
-      <div class="photo"><img id="qImg" alt="猜猜這是什麼花"></div>
+      <div class="photo" id="qPhoto"><img id="qImg" alt="猜猜這是什麼花"></div>
       <div class="qnum" id="qNum">1<small>/40</small></div>
     </div>
     <div class="panel">
@@ -283,7 +290,7 @@ table.cr th{color:var(--muted);font-weight:700;white-space:nowrap}
       <p class="qsub">按下按鈕，一次打開一個提示。猜到了就揭曉！</p>
       <div class="hint-btns" id="hintBtns"></div>
       <ul class="hints" id="hintList"></ul>
-      <p class="empty-tip" id="emptyTip">小技巧：先讓大家自由說說看「它是什麼顏色、在哪裡看過」，再打開第一個提示。<br>鍵盤：<span class="kbd">空白鍵</span> 下一個提示　<span class="kbd">Enter</span> 揭曉　<span class="kbd">→</span> 下一朵</p>
+      <p class="empty-tip" id="emptyTip">小技巧：先讓大家自由說說看「它是什麼顏色、在哪裡看過」，再打開第一個提示。<br>鍵盤：<span class="kbd">空白鍵</span> 下一個提示　<span class="kbd">Enter</span> 揭曉　<span class="kbd">→</span> 下一朵　<span class="kbd">P</span> 換照片</p>
       <div class="reveal-row">
         <button class="btn" id="revealBtn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.7 7.6 1 12c1.7 4.4 6 7.5 11 7.5s9.3-3.1 11-7.5c-1.7-4.4-6-7.5-11-7.5zm0 12.5a5 5 0 110-10 5 5 0 010 10zm0-8a3 3 0 100 6 3 3 0 000-6z"/></svg>揭曉答案</button>
       </div>
@@ -371,8 +378,8 @@ table.cr th{color:var(--muted);font-weight:700;white-space:nowrap}
 <div class="sign" id="footSign" style="display:none">設計者｜愛迪樂　<b>鍾孟修 職能治療師</b></div>
 </div>
 
-<script src="data/flowers.js"></script>
-<script src="data/media.js"></script>
+<script src="data/flowers.js?v=3"></script>
+<script src="data/media.js?v=3"></script>
 <script>
 (function(){
 "use strict";
@@ -427,6 +434,22 @@ const HINTS=[
 ];
 const cur=()=>F[st.list[st.pos]];
 const nUsed=()=>st.used.filter(k=>k!=="choice").length;
+/* 每種花 3 張照片：原圖＋key-2、key-3 */
+const pics=b=>[b.key,b.key+"-2",b.key+"-3"].slice(0,1+((M[b.key].more||[]).length)).map(s=>"assets/img/"+s+".jpg");
+const credits=b=>[M[b.key].img,...(M[b.key].more||[])];
+const ARR_L=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>`;
+const ARR_R=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>`;
+function wirePics(box, b, onSet){
+  box.querySelectorAll(".pnav,.pbar").forEach(x=>x.remove());
+  const L=pics(b), img=box.querySelector("img"); if(L.length<2) return;
+  box.insertAdjacentHTML("beforeend",`<button class="pnav prev" aria-label="上一張照片">${ARR_L}</button><button class="pnav next" aria-label="下一張照片">${ARR_R}</button><div class="pbar"><span class="pc">照片 1/${L.length}</span>${L.map((_,i)=>`<button data-i="${i}" aria-label="第 ${i+1} 張照片"${i?"":` class="on"`}></button>`).join("")}</div>`);
+  let i=0;
+  const set=j=>{ i=(j+L.length)%L.length; img.src=L[i]; box.querySelectorAll(".pbar button").forEach((d,n)=>d.classList.toggle("on",n===i)); box.querySelector(".pc").textContent=`照片 ${i+1}/${L.length}`; if(onSet) onSet(i); };
+  box.querySelector(".prev").onclick=e=>{e.stopPropagation();set(i-1)};
+  box.querySelector(".next").onclick=e=>{e.stopPropagation();set(i+1)};
+  box.querySelectorAll(".pbar button").forEach(d=>d.onclick=e=>{e.stopPropagation();set(+d.dataset.i)});
+  box._set=d=>set(i+d);
+}
 function applyPhoto(){
   const img=$("#qImg"), n=nUsed();
   if(st.mode==="blur"){ const px=[24,18,13,8,4,2,0][Math.min(n,6)]; img.style.filter=px?`blur(${px}px)`:"none"; img.style.transform=px?"scale(1.1)":"none"; }
@@ -436,7 +459,8 @@ function applyPhoto(){
 function openQuiz(){
   if(!st.list.length) buildList("all");
   const b=cur(); st.used=[];
-  const img=$("#qImg"); img.style.transition="none"; applyPhoto(); img.src="assets/img/"+b.key+".jpg"; void img.offsetWidth; img.style.transition="";
+  const img=$("#qImg"); img.style.transition="none"; applyPhoto(); img.src=pics(b)[0]; void img.offsetWidth; img.style.transition="";
+  wirePics($("#qPhoto"), b);
   $("#qProg").innerHTML=`<span class="hide-s">第 </span>${st.pos+1}<span class="hide-s"> 朵</span> / ${st.list.length}`;
   $("#qNum").innerHTML=`${st.pos+1}<small>/${st.list.length}</small>`;
   $("#hintList").innerHTML=""; $("#emptyTip").style.display="";
@@ -500,7 +524,7 @@ function showAnswer(){
   const qn=encodeURIComponent(b.name);
   $("#ansBody").innerHTML=`
   <div class="ans-hero">
-    <div class="pframe"><div class="photo"><img src="assets/img/${b.key}.jpg" alt="${esc(b.name)}"></div></div>
+    <div class="pframe"><div class="photo" id="aPhoto"><img src="assets/img/${b.key}.jpg" alt="${esc(b.name)}"></div></div>
     <div class="ans-name">
       <span class="a">${esc(praise)}</span>
       <span class="b">${esc(b.name)}</span>
@@ -525,9 +549,10 @@ function showAnswer(){
       <a class="chip" href="https://zh.wikipedia.org/w/index.php?variant=zh-tw&search=${encodeURIComponent(b.sci.split(/[（(]/)[0].trim())}" target="_blank" rel="noopener">${ICON_EXT}維基百科</a>
     </div>
     <div class="vids">${vids}</div>
-    <p class="credit">照片：${esc(m.img.author)}，${lic}，<a href="${m.img.page}" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+    <p class="credit">${credits(b).map((c,i)=>`照片 ${i+1}：${esc(c.author)}，${c.licurl?`<a href="${c.licurl}" target="_blank" rel="noopener">${esc(c.lic)}</a>`:esc(c.lic)}，<a href="${c.page}" target="_blank" rel="noopener">Wikimedia Commons</a>`).join("<br>")}</p>
   </div>
   <div class="ans-nav"><button class="btn ghost" id="aBack2">回到提示</button><button class="btn" id="aNext2">下一朵花</button></div>`;
+  wirePics($("#aPhoto"), b);
   $$("[data-yt]").forEach(t=>{const go=()=>{t.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${t.dataset.yt}?autoplay=1&rel=0" title="YouTube 影片" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`};t.onclick=go;t.onkeydown=e=>{if(e.key==="Enter")go()}});
   $("#aBack2").onclick=$("#aBack").onclick=()=>show("quiz");
   $("#aNext2").onclick=$("#aNext").onclick=()=>goNext();
@@ -549,7 +574,7 @@ function renderGallery(){
 }
 
 /* ---------- 來源表 ---------- */
-$("#imgTable").innerHTML="<tr><th>花</th><th>攝影者</th><th>授權</th><th>原始檔案</th></tr>"+F.map(b=>{const i=M[b.key].img;return `<tr><td>${esc(b.name)}</td><td>${esc(i.author)}</td><td>${i.licurl?`<a href="${i.licurl}" target="_blank" rel="noopener">${esc(i.lic)}</a>`:esc(i.lic)}</td><td><a href="${i.page}" target="_blank" rel="noopener">Commons</a></td></tr>`}).join("");
+$("#imgTable").innerHTML="<tr><th>花</th><th>攝影者</th><th>授權</th><th>原始檔案</th></tr>"+F.flatMap(b=>credits(b).map((i,n)=>`<tr><td>${esc(b.name)}${n?` ${n+1}`:""}</td><td>${esc(i.author)}</td><td>${i.licurl?`<a href="${i.licurl}" target="_blank" rel="noopener">${esc(i.lic)}</a>`:esc(i.lic)}</td><td><a href="${i.page}" target="_blank" rel="noopener">Commons</a></td></tr>`)).join("");
 $("#decoTable").innerHTML="<tr><th>圖</th><th>原作者／出處</th><th>授權</th><th>原始檔案</th></tr>"+Object.values(D).map(d=>`<tr><td>${esc(d.t)}</td><td>${esc(d.a)}</td><td>公眾領域</td><td><a href="${d.page}" target="_blank" rel="noopener">Commons</a></td></tr>`).join("");
 
 /* ---------- 鍵盤 ---------- */
@@ -560,6 +585,7 @@ addEventListener("keydown",e=>{
   else if(q&&e.key==="Enter"){e.preventDefault();showAnswer()}
   else if((q||a)&&e.key==="ArrowRight"){goNext()}
   else if(q&&e.key==="ArrowLeft"){$("#qPrev").click()}
+  else if((q||a)&&(e.key==="p"||e.key==="P")){const bx=$(q?"#qPhoto":"#aPhoto"); if(bx&&bx._set) bx._set(1)}
   else if(e.key==="Escape"){show("home")}
 });
 
